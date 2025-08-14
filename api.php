@@ -540,7 +540,7 @@ class API {
     public function fetchConversionRate($from, $to) {
         $payload = json_encode([
             "studentnum" => "u23545537",  
-            "apikey" => "4c6a1afc39d7b529b7bf07a4d29bce7c",  
+            "apikey" => "$",  
             "type" => "convert",
             "from" => $from,
             "to" => $to
