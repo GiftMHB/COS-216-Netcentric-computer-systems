@@ -1,0 +1,111 @@
+/*Gift Mohuba 23545527*/
+.products {
+    border-top: 2px dotted white; 
+  }
+  .products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    background-color: lightgray;
+  }
+
+  .product-holder {
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .product-holder:hover {
+    transform: scale(1.05);
+  }
+  .product-actios {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  .wishlist-btn, .cart-btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  .wishlist-btn {
+    background: #ff4d4d;
+    color: white;
+}
+
+.cart-btn {
+    background: #007bff;
+    color: white;
+}
+
+.wishlist-btn:hover {
+    background: #ff1a1a;
+}
+
+.cart-btn:hover {
+    background: #0056b3;
+}
+
+.product-image {
+    width: 100%;
+    height: 200px;
+    object-fit:scale-down;
+    border-radius: 10px;
+}
+h3 {
+    font-size: 25px;
+    margin: 10px 0;
+    color: #333;
+}
+p {
+    font-size: 18px;
+    color: #007bff;
+}
+
+.info-btn {
+    background-color: lightgray; 
+    color: white; 
+    border: 2px solid #0056b3; 
+    border-radius: 25px; 
+    padding: 5px 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin-top: 10px;
+}
+
+.info-btn:hover {
+    background-color: #0056b3; 
+    transform: scale(1.05); 
+}
+
+.info-btn:active {
+    transform: scale(0.98); 
+}
+
+.description {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.extra-details {
+    list-style: none;
+    padding: 0;
+}
+
+.extra-details li {
+    background: #007bff;
+    color: white;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}

@@ -1,0 +1,243 @@
+/* Gift Mohuba 23545527*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: block;
+}
+
+.filters {
+  background-color: #007bff; 
+  text-align: left;
+  border-radius: 20px;
+  margin-left: 10px;
+  position: fixed;
+  padding: 20px;
+  width: 230px;
+  left: 0;
+  top: 100px;
+  bottom: 0;
+  overflow-y: auto;
+  z-index: 1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+  /* .filter-group,.currency-filter {
+    display: flex;
+    justify-content: space-around;
+  } */
+  
+.filter-group, .currency-filter,.manual-price-range, .sort-group { 
+
+  display: flex;
+  /* flex-wrap: wrap;  */
+  flex-direction: column;
+  gap: 15px; 
+  align-items: center; 
+  width: auto; 
+  max-width: 100%; 
+}
+
+.filter-select, .sort-select,.manual-price-range, #currency {
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 5px; 
+  border: 1px solid #ccc;
+  width: 100%; 
+  box-sizing: border-box; 
+}
+
+.filter-select:focus, .sort-select:focus,.manual-price-range, #currency:focus {
+  outline: none;
+  border-color: #0056b3; /* Blue focus color */
+}
+
+.filter-range { 
+  width: 100%; 
+}
+
+/* .filter-range::-webkit-slider-thumb {
+  border: 2px solid #0056b3;
+  width: 20px;
+  height: 10px;
+  border-radius: 50%; 
+  cursor: pointer;
+} */
+
+/* Price Range Slider Styling */
+.filter-range {
+  width: 100%; /* Make the slider take full width */
+}
+
+#price-slider {
+  width: 100%;
+  margin-top: 10px;
+}
+
+#price {
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+}
+
+/* Label Styling for Consistency */
+.filter-label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+  background-color: lightgray;
+  flex-grow: 1;
+  margin-left: 270px; 
+  padding: 20px;
+}
+
+.product-holder {
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.product-holder:hover {
+  transform: scale(1.05);
+}
+
+.product-actios {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.wishlist-btn, .cart-btn {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.wishlist-btn {
+  background: #ff4d4d;
+  color: white;
+}
+
+.cart-btn {
+  background: #007bff;
+  color: white;
+}
+
+.wishlist-btn:hover {
+  background: #ff1a1a;
+}
+
+.cart-btn:hover {
+  background: #0056b3;
+}
+
+.product-image {
+  width: 100%;
+  height: 200px;
+  object-fit:scale-down;
+  border-radius: 10px;
+}
+
+h3 {
+  font-size: 25px;
+  margin: 10px 0;
+  color: #333;
+}
+
+p {
+  font-size: 18px;
+  color: #007bff;
+}
+
+.info-btn {
+  background-color: lightgray; 
+  color: white; 
+  border: 2px solid #0056b3; 
+  border-radius: 25px; 
+  padding: 5px 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  margin-top: 10px;
+}
+
+.info-btn:hover {
+  background-color: #0056b3; 
+  transform: scale(1.05); 
+}
+
+.info-btn:active {
+  transform: scale(0.98); 
+}
+
+#notFound{
+  color: #007bff;
+}
+
+.manual-price-range input {
+  width: 100px;
+  padding: 5px;
+} 
+
+/* Styling for the auth-links container */
+.auth-links {
+  align-items: end;
+  gap: 15px;
+  font-family: Arial, sans-serif;
+  color: #007bff;
+  text-align: right;
+}
+
+/* Styling for the welcome message */
+.auth-links span {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+/* Styling for login and register links */
+.auth-links a {
+  font-size: 18px;
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  background-color: #007bff; /* Blue background for links */
+  color: #fff; /* White text color */
+  display: inline-flex;
+  align-items: center;
+  gap: 8px; /* Space between emoji and text */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Styling for login and register links on hover */
+.auth-links a:hover {
+  background-color: #0056b3; /* Darker blue when hovering */
+  color: #f8f9fa; /* Light color for text on hover */
+}
+
+/* Styling for logout link */
+.auth-links a.logout {
+  background-color: #007bff; /* Red background for logout */
+  color: #fff; /* White text for logout */
+}
+
+/* Styling for logout link on hover */
+.auth-links a.logout:hover {
+  background-color: #007bff; /* Darker red on hover */
+}

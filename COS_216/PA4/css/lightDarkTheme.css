@@ -1,0 +1,35 @@
+body {
+    background-color: white;
+    color: black;
+    font-family: Arial, sans-serif;
+}
+
+a {
+    color: #007bff;
+}
+
+
+body.light {
+    background-color: #f4f4f4; 
+    color: #333; 
+}
+
+a.light {
+    color: #007bff;
+}
+
+
+body.dark {
+    background-color: #121212; 
+    color: #e0e0e0; 
+}
+
+a.dark {
+    color: #bb86fc; 
+}
+
+
+button.dark {
+    background-color: #333;
+    color: white;
+}

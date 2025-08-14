@@ -1,0 +1,77 @@
+<!--Gift Mohuba 23545527-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale1.0">
+        <title>Cart</title>
+        <link rel="stylesheet" type="text/css" href="../PA1/css/main.css">
+        <link rel="stylesheet" type="text/css" href="../PA1/css/cart.css">
+
+    </head>
+
+    <body>
+
+        <div class="top_box">
+            <a href="../../index.html">Home</a>
+            <a href="index.html" >Products</a>
+            <a href="deals.html" >Best Deals</a>
+            <a href="wishlist.html" >Wishlist</a>
+            <a href="cart.html" class="active" >Cart</a>
+
+            <div class="search">
+              <form action="/action_page.php">
+                <input type="text" placeholder="Search..." name="search">
+                <button type="submit" disabled>
+                    🔍
+                </button>
+              </form>
+            </div>
+
+        </div>
+
+        <h1>Your Cart</h1>
+        
+    <div class="cart-container">
+        
+        <div class="cart-item">
+            <img src="./img/phone.jpg" alt="Phone">
+            <div class="item-info">
+                <h3>Cell Phone</h3>
+                <p>Price: R8000</p>
+                <p>Quantity: 1</p>
+                <p>Total: R8000</p>
+            </div>
+            <button class="remove-btn">❌ Remove</button>
+        </div>
+
+        <div class="cart-item">
+            <img src="./img/hpLaptop.jpeg" alt="Laptop">
+            <div class="item-info">
+                <h3>Laptop</h3>
+                <p>Price: R15000</p>
+                <p>Quantity: 1</p>
+                <p>Total: R15000</p>
+            </div>
+            <button class="remove-btn">❌ Remove</button>
+        </div>
+
+        <div class="cart-item">
+            <img src="./img/Wireless-headphones.jpeg" alt="Headphones">
+            <div class="item-info">
+                <h3>Headphones</h3>
+                <p>Price: R2000</p>
+                <p>Quantity: 2</p>
+                <p>Total: R4000</p>
+            </div>
+            <button class="remove-btn">❌ Remove</button>
+        </div>
+        <div class="cart-summary">
+            <p>Subtotal: R27000</p>
+            <p>Grand Total: R27000</p>
+            <button class="checkout-btn">💳 Checkout</button>
+        </div>
+    </div>
+    
+    </body>
+</html>

@@ -1,0 +1,68 @@
+/*Gift Mohuba 23545527*/
+.wishlist-container {
+    
+    margin: 50px 250px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.wishlist-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #1e3a5f;
+    margin-bottom: 20px;
+}
+
+.wishlist-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #e0e7ef;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.wishlist-item:hover {
+    transform: scale(1.02);
+}
+
+.wishlist-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.wishlist-item-info {
+    flex-grow: 1;
+    margin-left: 15px;
+}
+
+.wishlist-item-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.wishlist-item-price {
+    color: #1e3a5f;
+    font-size: 1rem;
+}
+
+.remove-btn {
+    background: #ff4c4c;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background 0.2s;
+}
+
+.remove-btn:hover {
+    background: #e03b3b;
+}

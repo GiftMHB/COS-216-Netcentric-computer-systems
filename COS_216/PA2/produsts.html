@@ -1,0 +1,127 @@
+<!-- Gift Mohuba u23545527 -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Products</title>
+        <link rel="stylesheet" type="text/css" href="../PA2/css/main.css">
+        <link rel="stylesheet" type="text/css" href="../PA2/css/products.css">
+        <script src="../PA2/js/products.js" defer></script>
+    </head>
+    <body>
+
+        <div class="top_box"><!--for the nav bar-->
+
+            <a href="../../index.html">Home</a>
+            <a href="produsts.html" class="active">Products</a>
+            <a href="deals.html">Best Deals</a>
+            <a href="wishlist.html">Wishlist</a>
+            <a href="cart.html">Cart</a>
+
+            <div class="search">
+              
+                <input type="text" id="myInput" placeholder="Search..." onkeyup="search()" name="search">
+                <button type="submit" onclick="search()">
+                    🔍
+                </button>
+              
+            </div>
+
+        </div>
+
+        <div class="filters">
+
+            <div class="filter-group">
+
+              <div class="filter-group">
+                <label for="main-filter">Filter By:</label>
+                <select id="main-filter" class="filter-select" onchange="updateSubFilter()">
+                    <option value="">Select a filter</option>
+                    <option value="category">Category</option>
+                    <option value="country">Country of Origin</option>
+                    <option value="brand">Brand</option>
+                </select>
+
+                <select id="sub-filter" class="filter-select" onchange="filterProducts()" style="display: none;"></select>
+              </div>
+
+              <div class="sort-group">
+                <select id="sort-options"  class="sort-select" onchange="sortProducts()">
+                    <option value="">Sort By</option>
+                    <option value="newest">Newest Arrivals</option>
+                    <option value="price-asc">Price: Low to High</option>
+                    <option value="price-desc">Price: High to Low</option>
+                </select>
+              </div>
+
+              <div class="currency-filter">
+                <select id="currency" onchange="getCurrency()">
+                    <option value="">Select a currency</option>
+                    <option value="AUD">AUD - Australian Dollar</option>
+                    <option value="BGN">BGN - Bulgarian Lev</option>
+                    <option value="BRL">BRL - Brazilian Real</option>
+                    <option value="CAD">CAD - Canadian Dollar</option>
+                    <option value="CHF">CHF - Swiss Franc</option>
+                    <option value="CNY">CNY - Chinese Yuan</option>
+                    <option value="CZK">CZK - Czech Koruna</option>
+                    <option value="DKK">DKK - Danish Krone</option>
+                    <option value="EUR">EUR - Euro</option>
+                    <option value="GBP">GBP - British Pound</option>
+                    <option value="HKD">HKD - Hong Kong Dollar</option>
+                    <option value="HRK">HRK - Croatian Kuna</option>
+                    <option value="HUF">HUF - Hungarian Forint</option>
+                    <option value="IDR">IDR - Indonesian Rupiah</option>
+                    <option value="ILS">ILS - Israeli Shekel</option>
+                    <option value="INR">INR - Indian Rupee</option>
+                    <option value="ISK">ISK - Icelandic Krona</option>
+                    <option value="JPY">JPY - Japanese Yen</option>
+                    <option value="KRW">KRW - South Korean Won</option>
+                    <option value="MXN">MXN - Mexican Peso</option>
+                    <option value="MYR">MYR - Malaysian Ringgit</option>
+                    <option value="NOK">NOK - Norwegian Krone</option>
+                    <option value="NZD">NZD - New Zealand Dollar</option>
+                    <option value="PHP">PHP - Philippine Peso</option>
+                    <option value="PLN">PLN - Polish Zloty</option>
+                    <option value="RON">RON - Romanian Leu</option>
+                    <option value="RUB">RUB - Russian Ruble</option>
+                    <option value="SEK">SEK - Swedish Krona</option>
+                    <option value="SGD">SGD - Singapore Dollar</option>
+                    <option value="THB">THB - Thai Baht</option>
+                    <option value="TRY">TRY - Turkish Lira</option>
+                    <option value="USD">USD - US Dollar</option>
+                    <option value="ZAR" selected>ZAR - South African Rand</option> 
+                </select>
+              </div>
+            
+
+              <label class="filter-label">Price Range (R)</label>
+              <div>
+                  <input type="range" min="1" max="20000" value="100" id="price-slider" onchange="slider()">
+                  <p style="color: black;">R<span id="price">100</span></p>
+              </div>
+            </div>
+
+            
+        </div>
+
+        <div class="products">
+          
+            <div class="loader-container">
+              <div class="loader">
+                <span class="loader-text">loading</span>
+                <span class="load"></span>
+              </div>
+            </div>
+          
+            <div class="products-holder">
+                <!-- Products will be inserted here -->
+            </div>
+        
+            <div id="notFound" style="visibility: hidden; text-align: center; font-weight: bold; margin-top: 10px;">
+                <p>No products found.</p>
+            </div>
+        
+        </div>
+    </body>
+</html>

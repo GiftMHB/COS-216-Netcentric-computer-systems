@@ -1,0 +1,130 @@
+<!-- Gift Mohuba 23545527-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale1">
+        <title>Products</title>
+        <link rel="stylesheet" type="text/css" href="../PA1/css/main.css">
+        <link rel="stylesheet" type="text/css" href="../PA1/css/products.css">
+    </head>
+    <body>
+
+        <div class="top_box">
+            <a href="../../index.html">Home</a>
+            <a href="index.html" class="active" >Products</a>
+            <a href="deals.html" >Best Deals</a>
+            <a href="wishlist.html" >Wishlist</a>
+            <a href="cart.html" >Cart</a>
+
+            <div class="search">
+              <form action="/action_page.php">
+                <input type="text" placeholder="Search..." name="search">
+                <button type="submit" disabled>
+                    🔍
+                </button>
+              </form>
+            </div>
+
+        </div>
+
+        <div class="filters">
+         
+            <div class="filter-group">
+              <select id="category" class="filter-select">
+                <option value="">Select a category</option>
+                <option value="electronics">Electronics</option>
+                <option value="clothing">Clothing</option>
+                <option value="home">Home & Living</option>
+              </select>
+
+              <div class="sort-group">
+                <select id="sort-options" name="sort" class="sort-select">
+                    <option value="">Sort By</option>
+                    <option value="newest">Newest Arrivals</option>
+                    <option value="price-asc">Price: Low to High</option>
+                    <option value="price-desc">Price: High to Low</option>
+                </select>
+              </div>
+
+              <label class="filter-label">Price Range (R)</label>
+              <div >
+                  <input type="range" min="100" max="200000" value="100" name="price" class="filter-range" id="price-slider">
+                  <span id="price-tooltip" class="price-tooltip">R100</span>
+              </div>
+
+            </div>
+
+        </div>
+
+        <div class="products">
+
+          <div class="product-holder">
+            <img class="product-image" src="./img/phone.jpg" alt="Product 1">
+            <h3>Cell Phone</h3>
+            <p>R8000</p>
+            <div class="product-actions">
+              <button class="wishlist-btn">❤️ Wishlist</button>
+              <button class="cart-btn">🛒 Add to Cart</button>
+            </div>
+            <button class="info-btn" onclick="location.href='view.html'">ℹ️ More Info</button>
+          </div>
+
+          <div class="product-holder">
+            <img src="./img/hpLaptop.jpeg" alt="Product 2">
+            <h3>HP Laptop</h3>
+            <p>R10000</p>
+            <div class="product-actions">
+              <button class="wishlist-btn">❤️ Wishlist</button>
+              <button class="cart-btn">🛒 Add to Cart</button>
+            </div>
+            <button class="info-btn" onclick="location.href='view.html'">ℹ️ More Info</button>
+          </div>
+          
+          <div class="product-holder">
+            <img src="./img/tabblet1.jpg" alt="Product 3">
+            <h3>Tablet</h3>
+            <p>R6000</p>
+            <div class="product-actions">
+              <button class="wishlist-btn">❤️ Wishlist</button>
+              <button class="cart-btn">🛒 Add to Cart</button>
+            </div>
+            <button class="info-btn" onclick="location.href='view.html'">ℹ️ More Info</button>
+          </div>
+
+          <div class="product-holder">
+            <img src="./img/Wireless-headphones.jpeg" alt="Product 4">
+            <h3>Wireless-headphones</h3>
+            <p>R3000</p>
+            <div class="product-actions">
+              <button class="wishlist-btn">❤️ Wishlist</button>
+              <button class="cart-btn">🛒 Add to Cart</button>
+            </div>
+            <button class="info-btn" onclick="location.href='view.html'">ℹ️ More Info</button>
+          </div>
+
+          <div class="product-holder">
+            <img src="./img/speaker.jpeg" alt="Product 1">
+            <h3>Wireless Speaker</h3>
+            <p>R3500</p>
+            <div class="product-actions">
+              <button class="wishlist-btn">❤️ Wishlist</button>
+              <button class="cart-btn">🛒 Add to Cart</button>
+            </div>
+            <button class="info-btn" onclick="location.href='view.html'">ℹ️ More Info</button>
+          </div>
+
+          <div class="product-holder">
+            <img src="./img/monitor.jpeg" alt="Product 1">
+            <h3>Monitor</h3>
+            <p>R4570</p>
+            <div class="product-actions">
+              <button class="wishlist-btn">❤️ Wishlist</button>
+              <button class="cart-btn">🛒 Add to Cart</button>
+            </div>
+            <button class="info-btn" onclick="location.href='view.html'">ℹ️ More Info</button>
+          </div>
+
+        </div>
+    </body>
+</html>
