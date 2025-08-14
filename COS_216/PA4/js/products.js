@@ -1,4 +1,4 @@
-//Gift Mohuba 23545527
+//Gift Mohuba 
 window.onload = function () {
     setTimeout(fetchProducts, 2000);
 };
@@ -109,8 +109,8 @@ function getCurrency()
     
     const url = 'https://wheatley.cs.up.ac.za/api/';
     const data = JSON.stringify({
-        studentnum: 'u23545527',
-        apikey: '4c6a1afc39d7b529b7bf07a4d29bce7c',
+        studentnum: '',
+        apikey: '',
         type: 'GetCurrencyList', 
     });
 
@@ -462,4 +462,5 @@ function viewProduct(productId)
 {
     localStorage.setItem("selectedProduct",productId);
     window.location.href = "view.php";
+
 }
