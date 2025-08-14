@@ -1,12 +1,12 @@
-//Gift Mohuba u23545527
+//Gift Mohuba 
 /* I used Asynchronous calls because of the following reasons:
 Nonblocking
 Parallel execution
 Sends a request and does not wait/block until a reply comes back
 Continue executing other code while waiting for the reply
 */
-const API_KEY = '4c6a1afc39d7b529b7bf07a4d29bce7c';
-const STUDENT_NUM = 'u23545527';
+const API_KEY = '';
+const STUDENT_NUM = '';
 
 setTimeout(fetchWishlist,2000);
 
@@ -64,3 +64,4 @@ function displayWishlist(products)
 
     wishlistContainer.innerHTML = output;
 }
+
