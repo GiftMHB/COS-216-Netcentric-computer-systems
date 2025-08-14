@@ -1,5 +1,5 @@
 
-//Gift Mohuba u23545527
+//Gift Mohuba
 /* I used Asynchronous calls because of the following reasons:
 Nonblocking
 Parallel execution
@@ -11,8 +11,8 @@ window.onload = function () {
     setTimeout(fetchProducts, 2000);
 };
 
-const API_KEY = '4c6a1afc39d7b529b7bf07a4d29bce7c';
-const STUDENT_NUM = 'u23545527';
+const ;
+const STUDENT_NUM = 
 
 var products = [];
 var filteredProducts = [];
@@ -289,6 +289,7 @@ function viewProduct(productId)
     localStorage.setItem("selectedProduct",productId);
     window.location.href = "view.html";
 }
+
 
 
 
