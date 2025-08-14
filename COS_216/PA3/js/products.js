@@ -10,7 +10,7 @@ window.onload = function () {
     setTimeout(fetchProducts, 2000);
 };
 
-const API_KEY = '';
+const AP = '';
 const STUDENT_NUM = '';
 
 var products = [];
@@ -289,3 +289,4 @@ function viewProduct(productId)
     window.location.href = "view.html";
 
 }
+
