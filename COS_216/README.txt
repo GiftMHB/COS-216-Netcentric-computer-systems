@@ -59,4 +59,4 @@ Summary of Features Implemented
 
 login details:
 email> boitumohuba15@gamail.com
-password> 01@Themogift
+password> 
