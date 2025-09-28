@@ -57,6 +57,3 @@ Summary of Features Implemented
 - [x] Generates and returns a unique API key
 - [x] Sends meaningful JSON error and success responses
 
-login details:
-email> boitumohuba15@gamail.com
-password> 
